@@ -16,12 +16,12 @@ def rps_game_winner(game):
         raise NoSuchStrategyError("Invalid strategy")
 
     if move1 == move2:
-        return game[0]  
+        return str(game[0][0]+" "+game[0][1])  
 
     if (move1 == "R" and move2 == "S") or (move1 == "S" and move2 == "P") or (move1 == "P" and move2 == "R"):
-        return game[0]  
+        return str(game[0][0]+" "+game[0][1])
 
-    return game[1]  
+    return str(game[1][0]+' '+game[1][1])  
 
 
 game1 = [["player1", "P"], ["player2", "S"]]

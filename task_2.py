@@ -1,19 +1,16 @@
-def coincidence(lst, r):
-    if not lst or not r:
+def coincidence(input_list=None, input_range=None):
+    if input_list is None or input_range is None:
         return []
 
-    result = [num for num in lst if num in r]
+    result = []
+    for item in input_list:
+        if isinstance(item, (int, float)) and item >= input_range.start and item < input_range.stop:
+            result.append(item)
+    
     return result
 
-if __name__ == "__main__":
-    my_list = [1, 5, 10, 15, 20]
-    my_range = range(5, 15)
 
-    result = coincidence(my_list, my_range)
-    print(result)  # Выведет: [5, 10]
+print(coincidence([1, 2, 3, 4, 5], range(3, 6)))             #Выведет => [3, 4, 5]
+print(coincidence())                                         #Выведет => []
+print(coincidence([None, 1, 'foo', 4, 2, 2.5], range(1, 4))) #Выведет => [1, 2, 2.5]
 
-    result = coincidence(my_list, None)
-    print(result)  # Выведет: []
-
-    result = coincidence(None, None)
-    print(result)  # Выведет: []

@@ -1,18 +1,16 @@
-def max_odd(array):
+def max_odd(numbers):
     max_odd_value = None
 
-    for num in array:
-        if num % 2 != 0:
-            if max_odd_value is None or num > max_odd_value:
-                max_odd_value = num
-
+    for item in numbers:
+        if isinstance(item, (int, float)) and item % 2 == 1:  
+            if max_odd_value is None or item > max_odd_value:
+                max_odd_value = item
+    
     return max_odd_value
 
-if __name__ == "__main__":
-    my_array = [1, 2, 3, 4, 5, 6, 7, 8, 9.0, 10]
-    result = max_odd(my_array)
-    print(result)  # Выведет: 9
 
-    my_array2 = [2, 4, 6, 8, 10]
-    result = max_odd(my_array2)
-    print(result)  # Выведет: None
+print(max_odd([1, 2, 3, 4, 4]))                  #Выведет => 3
+print(max_odd([21.0, 2, 3, 4, 4]))               #Выведет => 21
+print(max_odd(['ololo', 2, 3, 4, [1, 2], None])) #Выведет => 3
+print(max_odd(['ololo', 'fufufu']))              #Выведет => None
+print(max_odd([2, 2, 4]))                        #Выведет => None

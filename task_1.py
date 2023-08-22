@@ -1,6 +1,7 @@
 import re
 
 def is_palindrome(string):
+    string = str(string)
     cleaned_string = re.sub(r'[^\w]', '', string)
 
     cleaned_string = cleaned_string.lower()
@@ -14,6 +15,7 @@ print(is_palindrome("Was it a car or a cat I saw?"))   # True
 
 
 def is_palindrome(string):
+    string = str(string)
     def remove_punctuations(s):
         return ''.join(char for char in s if char.isalnum())
     
@@ -23,6 +25,7 @@ def is_palindrome(string):
 
 
 print(is_palindrome("A man, a plan, a canal, Panama"))  # True
-print(is_palindrome("racecar"))                        # True
+print(is_palindrome(None))                        # False
+print(is_palindrome(333))                        # True
 print(is_palindrome("hello"))                          # False
 print(is_palindrome("Was it a car or a cat I saw?"))   # True
