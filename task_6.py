@@ -26,11 +26,11 @@ def rps_game_winner(game):
 
 game1 = [["player1", "P"], ["player2", "S"]]
 winner1 = rps_game_winner(game1)
-print(winner1)  # Вывод: ["player2", "S"]
+print(winner1)   
 
 game2 = [["player1", "R"], ["player2", "R"]]
 winner2 = rps_game_winner(game2)
-print(winner2)  # Вывод: ["player1", "R"]
+print(winner2)  
 
 game3 = [["player1", "R"], ["player2", "R"],['fdgdfg','T']]
 winner3 = rps_game_winner(game3)
