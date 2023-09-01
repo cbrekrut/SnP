@@ -17,7 +17,10 @@ class Dessert:
 
     @calories.setter
     def calories(self, value):
-        self._calories = value
+        try:
+            self._calories = int(value)
+        except ValueError:
+            self._calories = None
 
     def is_healthy(self):
         return self._calories is not None and self._calories < 200
