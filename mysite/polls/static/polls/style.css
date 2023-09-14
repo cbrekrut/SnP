@@ -1,7 +1,53 @@
-li a {
-    color: green;
+/* Стили для списка ul */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+header{
+    height: 150px;
+    background:  #007BFF;
+    border-radius: 50px;
+    text-align: center;
+    color:white;
+}
+header h1{
+    padding: 45px;
+    margin: auto;
+    color:white;
 }
 
-body {
-    background: white url("images/background.png") no-repeat;
+/* Стили для списка ul li */
+ul li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Рамка вокруг элемента */
+    background-color: #fff; /* Фон элемента */
 }
+
+/* Стили для ссылок в списке */
+ul li a {
+    text-decoration: none;
+    color: #007BFF; /* Цвет ссылок */
+    font-weight: bold;
+}
+
+/* Стили для ссылок при наведении */
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для абзаца в случае отсутствия опросов */
+p {
+    font-style: italic;
+    color: #888;
+}
+
+
+/* Общие стили для body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0; /* Цвет фона */
+}
+
+

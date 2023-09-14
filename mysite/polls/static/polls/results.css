@@ -1,0 +1,58 @@
+/* Общие стили для body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Цвет фона */
+    margin: 20px;
+    text-align: center; /* Выравнивание текста по центру */
+}
+header{
+    height: 150px;
+    background:  #007BFF;
+    border-radius: 50px;
+    text-align: center;
+    color:white;
+}
+header h1{
+    padding: 45px;
+    margin: auto;
+}
+/* Стили для заголовка */
+h1 {
+    background-color: #007BFF; /* Цвет фона заголовка */
+    color: #fff; /* Цвет текста заголовка */
+    padding: 10px; /* Отступы вокруг заголовка */
+    border-radius: 5px; /* Закругленные углы для заголовка */
+}
+
+/* Стили для списка результатов */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px; /* Отступ сверху списка */
+}
+
+/* Стили для элементов списка */
+li {
+    background-color: #fff; /* Цвет фона элемента списка */
+    border: 1px solid #ccc; /* Рамка вокруг элемента */
+    border-radius: 5px; /* Закругленные углы для элемента списка */
+    margin-bottom: 10px; /* Отступ снизу элемента списка */
+    padding: 10px; /* Отступы вокруг элемента списка */
+}
+
+/* Стили для ссылки "Vote again?" */
+a {
+    display: block; /* Сделать ссылку блочным элементом для полной ширины */
+    margin-top: 20px; /* Отступ сверху ссылки */
+    background-color: #007BFF; /* Цвет фона ссылки */
+    color: #fff; /* Цвет текста ссылки */
+    padding: 10px; /* Отступы вокруг текста ссылки */
+    border-radius: 5px; /* Закругленные углы для ссылки */
+    text-decoration: none; /* Убрать подчеркивание ссылки */
+    font-weight: bold;
+}
+
+/* Стили для ссылки "Vote again?" при наведении */
+a:hover {
+    background-color: #0056b3; /* Изменяем цвет фона при наведении */
+}
